@@ -70,17 +70,24 @@ Board.prototype.display = function(){
   for(var row = 0; row < MAX_ROWS; row++){
     for(var col = 0; col < MAX_COLS; col++){
       var value = this.board[row][col];
+      var color = ((value * 10) % 255);
       if (value > 0) {
         $('#'+id).html('<span class="number">' + value + '</span>');
-        $('#'+id).css('background-color', 'rgb(100,100,' + ((value * 10) % 255) + ')'); 
+        $('#'+id).css('background-color', 'rgb(100,100,' + color + ')'); 
+        $('#'+id).removeClass('empty');
+        $('#'+id).removeClass('new');
       } else if (value < 0) {
         this.board[row][col] *= -1;
         value = this.board[row][col];        
+        $('#'+id).removeClass('empty');
+        $('#'+id).addClass('new');
         $('#'+id).html('<span class="number">' + value + '</span>');
-        $('#'+id).css('background-color', 'gray');
+        $('#'+id).css('background-color', 'rgb(100,100,' + color + ')'); 
       } else {
         $('#'+id).html('');
-        $('#'+id).css('background-color', '#c8c8c8');
+        $('#'+id).addClass('empty');
+        $('#'+id).removeClass('new');
+        $('#'+id).css('background-color', '');
       }
       id++;
     };
