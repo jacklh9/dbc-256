@@ -42,9 +42,23 @@ main section {
   padding-bottom: 33%;
   background-color: #c8c8c8;
   margin: 0;
-  border: solid white 3px;
   font-size: 50px;
-  padding-left: 24px;
+  text-align: center;
+  border: solid white 3px;
+}
+
+.new {
+  border: solid yellow 3px;  
+}
+
+.empty {
+  border: solid white 3px;
+  background-color: #c8c8c8;
+}
+
+.number {
+  position: relative;
+  top: 40px;
 }
 
 .cells {
