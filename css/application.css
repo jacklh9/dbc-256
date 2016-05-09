@@ -44,7 +44,12 @@ main section {
   margin: 0;
   border: solid white 3px;
   font-size: 50px;
-  padding-left: 24px;
+  text-align: center;
+}
+
+.number {
+  position: relative;
+  top: 40px;
 }
 
 .cells {
