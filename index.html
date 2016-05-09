@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="css/application.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/mousetrap.js"></script>
+  <script src="js/underscore.js"></script>
+  <script src="js/board.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/collapse.js"></script>
+  <script src="js/application.js"></script>
+
+  <title>256!</title>
+</head>
+<body>
+<header class="container center-text">
+  <h1>256!</h1>
+</header>
+
+<main role="main" class="container">
+  <section class="center-text">
+  </section>
+
+
+  <section>
+    <ul class="cells">
+      <div class="row">
+        <li id="0" class="cell round-top-left"></li>
+        <li id="1" class="cell "></li>
+        <li id="2" class="cell"></li>
+        <li id="3" class="cell round-top-right"></li>
+      </div>
+      <div class="row">
+        <li id="4" class="cell "></li>
+        <li id="5" class="cell "></li>
+        <li id="6" class="cell "></li>
+        <li id="7" class="cell "></li>
+      </div>
+      <div class="row">
+        <li id="8" class="cell "></li>
+        <li id="9" class="cell "></li>
+        <li id="10" class="cell "></li>
+        <li id="11" class="cell "></li>
+      </div>
+      <div class="row">
+        <li id="12" class="cell round-bottom-left"></li>
+        <li id="13" class="cell "></li>
+        <li id="14" class="cell"></li>
+        <li id="15" class="cell round-bottom-right"></li>
+      </div>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
